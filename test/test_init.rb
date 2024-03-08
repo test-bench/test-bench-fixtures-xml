@@ -1,9 +1,9 @@
 require_relative '../init'
 
-require 'test_bench/isolated'; TestBenchIsolated::TestBench.activate
+require 'test_bench'; TestBench.activate
 
-require 'TEMPLATE-PATH/controls'
+require 'test_bench/fixtures/xml/controls'
 
 include TestBench
 
-Controls = TEMPLATE-NAMESPACE::Controls rescue nil
+Controls = TestBench::Fixtures::XML::Controls rescue nil
